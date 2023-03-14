@@ -9,6 +9,5 @@ voila
 voila-material
 bqplot
 IPython
-scipy
 warnings
 os
