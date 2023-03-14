@@ -1,0 +1,12 @@
+pandas
+numpy
+SPARQLWrapper
+pyDatalog
+matplotlib
+ipycytoscape
+ipywidgets
+voila
+voila-material
+bqplot
+IPython
+scipy

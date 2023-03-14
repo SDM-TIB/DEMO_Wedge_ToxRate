@@ -1,0 +1,49 @@
+[ {
+    "selector" : "node",
+    "css" : {
+      "font-size" : 14,
+      "text-valign" : "center",
+      "text-halign" : "center",
+      "shape" : "roundrectangle",
+      "border-width" : 0.0,
+      "height" : 20.0,
+      "background-color" : "rgb(137,208,245)",
+      "font-family" : "SansSerif.plain",
+      "font-weight" : "normal",
+      "background-opacity" : 1.0,
+      "color" : "rgb(0,0,0)",
+      "text-opacity" : 1.0,
+      "width" : 50.0,
+      "border-color" : "rgb(204,204,204)",
+      "border-opacity" : 1.0,
+      "content" : "data(name)"
+    }
+  }, {
+    "selector" : "node:selected",
+    "css" : {
+      "background-color" : "rgb(255,255,0)"
+    }
+  }, {
+    "selector" : "edge",
+    "css" : {
+      "width" : 1.5,
+      "font-weight" : "normal",
+      "target-arrow-color" : "rgb(64,64,64)",
+      "curve-style": "bezier",
+      "target-arrow-shape" : "triangle",
+      "text-opacity" : 1.0,
+      "font-size" : 12,
+      "line-color" : "rgb(64,64,64)",
+      "content" : "data(Effect_Impact)"
+    }
+  }, {
+    "selector" : "edge:selected",
+    "css" : {
+      "line-color" : "rgb(255,0,0)"
+    }
+  }, {
+    "selector": ".red",
+    "style": {
+      "background-color": "red"
+    }
+} ]
