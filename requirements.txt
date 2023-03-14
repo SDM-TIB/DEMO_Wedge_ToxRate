@@ -8,6 +8,3 @@ ipywidgets
 voila
 voila-material
 bqplot
-IPython
-warnings
-os
