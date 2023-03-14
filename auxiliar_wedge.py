@@ -12,8 +12,8 @@ from bqplot import Tooltip
 
 from SPARQLWrapper import SPARQLWrapper, JSON
 from math import comb
-import os
-os.environ["ENDPOINT"]='https://labs.tib.eu/sdm/clarify-kg-7-1/sparql'
+# import os
+# os.environ["ENDPOINT"]='https://labs.tib.eu/sdm/clarify-kg-7-1/sparql'
 
 
 def build_query_clarify(input_cui):
@@ -142,7 +142,7 @@ def load_data(file):
     onco_drugs = file["Input"]["OncologicalDrugs"]
     non_onco_drugs = file["Input"]["Non_OncologicalDrugs"]
     return extract_ddi(onco_drugs, non_onco_drugs,
-                       os.environ["ENDPOINT"])
+                       'https://labs.tib.eu/sdm/clarify-kg-7-1/sparql') # os.environ["ENDPOINT"]
 
 
 pyDatalog.create_terms('rdf_star_triple, inferred_rdf_star_triple, wedge, A, B, C, T, T2, wedge_pharmacokinetic')
@@ -369,11 +369,11 @@ def comparision_distribution_wedge(df1, title, x_label, y_label):
     bqplt.show()
 
 
-if __name__ == '__main__':
-    input_list = {
-	     "Input":{"OncologicalDrugs":["C3853921"],"Non_OncologicalDrugs":["C0286651","C0012010","C0016410","C0004147"]}
-	}
-    union, set_dsd_label = load_data(input_list)
-    response = discovering_knowledge(union, set_dsd_label)
-    r = json.dumps(response, indent=4)
-    print(r)
+# if __name__ == '__main__':
+#     input_list = {
+# 	     "Input":{"OncologicalDrugs":["C3853921"],"Non_OncologicalDrugs":["C0286651","C0012010","C0016410","C0004147"]}
+# 	}
+#     union, set_dsd_label = load_data(input_list)
+#     response = discovering_knowledge(union, set_dsd_label)
+#     r = json.dumps(response, indent=4)
+#     print(r)
