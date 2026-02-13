@@ -142,7 +142,7 @@ def load_data(file):
     onco_drugs = file["Input"]["OncologicalDrugs"]
     non_onco_drugs = file["Input"]["Non_OncologicalDrugs"]
     return extract_ddi(onco_drugs, non_onco_drugs,
-                       'https://labs.tib.eu/sdm/clarify-kg-7-1/sparql') # os.environ["ENDPOINT"]
+                       'https://labs.tib.eu/sdm/clarify-kg-8-0/sparql') # os.environ["ENDPOINT"]
 
 
 pyDatalog.create_terms('rdf_star_triple, inferred_rdf_star_triple, wedge, A, B, C, T, T2, wedge_pharmacokinetic')
